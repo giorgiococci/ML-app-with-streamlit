@@ -3,6 +3,7 @@ import pandas as pd
 
 from src.data import make_dataset
 from src.features import build_features
+from src.models import train_model
 
 
 if __name__ == "__main__":
@@ -18,4 +19,6 @@ if __name__ == "__main__":
     X, y = build_features.preprocessing(df)
 
     # Train the Model
-    
+    dataset_splitted = train_model.split_dataset(X, y)
+
+    model = train_model.train(dataset_splitted)

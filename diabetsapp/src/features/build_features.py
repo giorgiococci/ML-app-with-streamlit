@@ -28,6 +28,7 @@ def impute_median(data, var):
 
 def preprocessing(data):
 
+    print("Starting feature engineering...")
     print("Replacing zeros values...")
     data = replace_zeros(data)
 
