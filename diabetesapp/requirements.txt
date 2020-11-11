@@ -1,0 +1,5 @@
+pandas
+pyarrow
+streamlit
+pillow==7.0.0
+joblib
